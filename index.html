@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title>Draw for Dominos</title>
+	<link rel="shortcut icon" type="image/x-icon" href="logos/mountains4.svg" border-radius=100>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="themes/theme.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script> -->
+    <script src="sketch.js"></script>
+</head>
+<body>
+
+	<header>
+		<img src="logos/mountains.svg">
+		<h1>Project Domino</h1>
+	</header>
+
+	<nav>
+		<a class="inpagenav" href="#info">Info</a>
+		<a class="inpagenav" href="#the_team">The team</a>
+		<a class="inpagenav" href="#images">Images</a>
+		<a class="inpagenav" href="#drawing_canvas">Draw</a>
+	</nav>
+	<main>
+	<section id="info">
+		<h2>Info</h2>
+		We are designing a robot to lay dominoes in a pattern drawn by the user.<br>
+		We are conquering the world, one domino at a time.<br>
+		<br>
+		<a class="inpagenav" href="#drawing_canvas">
+			v  Click here to go draw  v</a><br>
+		<br>
+		<div class="rainbow">Don't trust Julian</div>
+	</section>
+
+	<div class="break"><br></div>
+
+	<section id="the_team">
+		<h2>The Team</h2>
+		<ul class="team-list">
+			<li>Gideon</li>
+			<li>Ben</li>
+			<li>Julian</li>
+			<li>Jakob</li>
+			<li>Ange</li>
+			<li>Julian</li>
+			<li>Sam</li>
+			<li>Reuben</li>
+			<li>Nicholas</li>
+			<li>Evan</li>
+			<li>Not Julian</li>
+			<li>Binara sometimes</li>
+		</ul>
+	</section>
+
+	<div class="break"><br></div>
+
+	<section class="gallery" id="images">
+		<!-- <img src="light_text.svg">
+		<img src="dark_text.svg">
+		<img src="light_notext.svg">
+		<img src="dark_notext.svg"> -->
+		<img src="images/machine2.png" class="twoper">
+		<img src="images/machine3.png" class="twoper"><br>
+
+		<img src="images/domino1.jfif">
+		<img src="images/drawing1.jfif">
+		<img src="images/robot1.jfif">
+
+		<img src="images/drawing2.jfif">
+		<img src="images/robot2.jfif">
+		<img src="images/domino2.jfif">
+		<div class="break"><br></div>
+	</section>
+
+	<section id="drawing_canvas">
+		<ul class="container">
+			<li>
+				<h3>Canvas</h3>
+				<!-- <iframe src="canvas.html" class="canvas", id="canvas"></iframe> -->
+				<div id="canvas"></div>
+			</li>
+			<li><div class="settings">
+				<br>
+				<h3>Settings</h3>
+				<button id="send_button" onclick=send()>
+					<span class="swapdefault">Run</span>
+    				<span class="swaphover" id="swaphover">IDK</span>
+    				</button><br>
+				<button id="clear_button" onclick=clear_canvas()>
+					Clear
+					</button><br>
+				<button id="open_canvas" onclick="location.href = 'http://localhost:8000'">
+					Open</button><br>
+			</li>
+		</ul>
+	</section>
+	</main>
+
+	<br>
+
+	<footer>
+		<button onclick=changeTheme('themes/theme')>Dark mode</button>
+		<button onclick=changeTheme('themes/theme_light')>Light mode</button>
+		<button onclick=changeTheme('themes/theme_magenta')>Magenta</button>
+		<button	onclick=changeTheme('themes/theme_gold')>Gold</button>
+		<button	onclick=changeTheme()>None</button>
+		<script src="script.js"></script>
+	</footer>
+
+</body>
+</html>
